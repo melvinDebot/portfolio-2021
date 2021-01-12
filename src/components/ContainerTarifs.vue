@@ -1,5 +1,5 @@
 <template>
-  <div class="container--price flex display">
+  <div class="container--price flex">
     <h2 class="container--title">TARIFS</h2>
     <div class="cards flex">
       <div class="card flex">

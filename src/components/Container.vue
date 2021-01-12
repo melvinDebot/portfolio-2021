@@ -83,6 +83,7 @@ export default {
     align-self: flex-end;
   }
   .text{
+    height: auto;
     cursor: pointer;
     overflow: hidden;
     position: relative;
@@ -91,11 +92,11 @@ export default {
     font-weight: 600;
       font-size: 8.6vw;
       @media (max-width: 500px) {
-        font-size: 10.6vw;
+        font-size: 12.6vw;
       }
     }
     h5{
-      font-weight: 300;
+      font-weight: 400;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -105,7 +106,8 @@ export default {
       white-space: nowrap;
       color: #16BF15;
       @media (max-width: 500px) {
-        font-size: 2.6vw;
+        margin-top: 20px;
+        font-size: 2.5vw;
       }
     }
   }

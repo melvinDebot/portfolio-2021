@@ -18,5 +18,15 @@
     "client" : "Tconnect",
     "route" : "bolk",
     "text_mission" : "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque"
+  },
+  {
+    "title" : "MADAME PEE",
+    "img" : "bolk",
+    "text" : "L'entreprise française Keecker espère rapprocher l'ère des robots majordomes de la réalité. Leur robot, qui vient d'être mis en ligne sur Kickstarter (qui a déjà permis de récolter 78 000 dollars), est un substitut coûteux à la télévision, à la chaîne stéréo et à la baby-sitter. Il peut être connecté à votre téléphone et vous fournir des bulletins météo et même projeter un navigateur internet sur le mur de votre salon. C'est un produit assez soigné, sauf qu'il se vend au détail pour 4 000 dollars.",
+    "year" : 2020,
+    "color" : "#20c997",
+    "client" : "Tconnect",
+    "route" : "madamepee",
+    "text_mission" : "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque"
   }
 ]

@@ -60,16 +60,17 @@ export default {
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
+  padding: 75px 0px;
   h3{
     opacity: 1;
   }
   .title{
     width: 100%;
-    height: 50%;
+    height: 60%;
     position: relative;
     padding: 20px 0px;
     @media (max-width: 500px) {
-      height: 20%;
+      height: 30%;
     }
     h2{
       font-size: 15vw;
