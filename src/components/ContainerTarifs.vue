@@ -6,10 +6,10 @@
         <h3>Standard</h3>
         <h2>600e</h2>
         <ul class="card--list">
-          <li>+Site responsive</li>
-          <li>+Charte graphique à partir d'une maquette pré-définie</li>
-          <li>+Sélection d'une palette de couleur</li>
-          <li>+Site responsive</li>
+          <li>+ Site responsive</li>
+          <li>+ Charte graphique à partir d'une maquette pré-définie</li>
+          <li>+ Sélection d'une palette de couleur</li>
+          <li>+ Site responsive</li>
         </ul>
         <button>Demandez un devis</button>
       </div>
@@ -18,9 +18,10 @@
         <h2>800e</h2>
         <ul class="card--list">
           <li>+ Site responsive</li>
-          <li>+ Site responsive</li>
-          <li>+ Site responsive</li>
-          <li>+ Site responsive</li>
+          <li>+ Création charte graphique personnalisée</li>
+          <li>+ Liens de partage sur les réseaux sociaux</li>
+          <li>+ Optimisation du référencement et des performances</li>
+          <li>+ Ajout de plusieurs fonctionnalités selon votre demande</li>
         </ul>
         <button>Demandez un devis</button>
       </div>
@@ -29,17 +30,48 @@
 </template>
 
 <script>
+import gsap, {Power1} from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 export default {
-  name:"Tarifs"
+  name:"Tarifs",
+  methods : {
+    animationCard(){
+      gsap.timeline({
+        scrollTrigger : {
+          trigger: ".container--price",
+          start: "top center",
+          end: "30% center",
+          markers: true,
+          scrub: true,
+        }
+      })
+      .fromTo('.cards',1, 
+        {
+          opacity: 0
+        },
+        {
+          opacity: 1,
+          ease: Power1.easeInOut
+        }
+      )
+    }
+  },
+  mounted(){
+    this.animationCard()
+  }
 }
 </script>
 
 <style lang="scss" scoped>
 .container--price{
   width: 100%;
-  height: auto;
+  height: 80vh;
   position: relative;
   overflow-x: hidden;
+  @media (max-width: 500px) {
+    height: 160vh;
+  }
   .container--title{
     position: absolute;
     font-size: 10vw;
@@ -53,6 +85,7 @@ export default {
     width: 80%;
     height: 662px;
     justify-content: space-around;
+    position: relative;
     @media (max-width: 500px) {
       flex-direction: column;
       height: 150vh;
@@ -61,7 +94,7 @@ export default {
       flex-direction: column;
       justify-content: space-around;
       width: 35%;
-      height: 443px;
+      height: 478px;
       background: #F4F4F4;
       @media (max-width: 500px) {
         width: 100%;
@@ -80,6 +113,7 @@ export default {
         list-style: none;
         li{
           margin-top: 10px;
+          text-align: start;
         }
       }
       button{
