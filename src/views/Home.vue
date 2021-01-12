@@ -1,17 +1,17 @@
 <template>
   <div class="home border--display">
-    <Slide />
+    <Header />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Slide from '@/components/Slide.vue'
+import Header from '@/components/Header.vue'
 
 export default {
   name: 'Home',
   components: {
-    Slide
+    Header,
   }
 }
 </script>
@@ -19,6 +19,6 @@ export default {
 <style lang="scss" scoped>
 .home{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 </style>
