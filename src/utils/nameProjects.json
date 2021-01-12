@@ -4,20 +4,39 @@
     "img" : "keecker",
     "link" : "/tconnect",
     "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO"
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO KOTLIN JAVASCRIPT SCSS HTML FIGMA",
+    "color" : "#040484"
   },
   {
     "name" : "BOLK",
     "img" : "bolk",
     "link" : "/bolk",
     "class_position" : "right",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO"
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA",
+    "color" : "#20c997"
   },
   {
     "name" : "TCONNECT",
     "img" : "keecker",
     "link" : "/tconnect",
     "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO"
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO KOTLIN JAVASCRIPT SCSS HTML FIGMA",
+    "color" : "#040484"
+  },
+  {
+    "name" : "BOLK",
+    "img" : "bolk",
+    "link" : "/bolk",
+    "class_position" : "right",
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA",
+    "color" : "#20c997"
+  },
+  {
+    "name" : "TCONNECT",
+    "img" : "keecker",
+    "link" : "/tconnect",
+    "class_position" : "left",
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO KOTLIN JAVASCRIPT SCSS HTML FIGMA",
+    "color" : "#040484"
   }
 ]

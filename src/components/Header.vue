@@ -17,7 +17,7 @@
 <script>
 import gsap, {Power3} from 'gsap'
 export default {
-  name: 'HEADER',
+  name: 'Header',
   data : function(){
     return {
 
