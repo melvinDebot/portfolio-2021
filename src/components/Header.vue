@@ -1,11 +1,11 @@
 <template>
-  <div class="header display">
+  <div class="header">
     <div class="subtitle flex">
-      <h3>MELVIN DEBOT</h3>
+      <h3 ref="nameUser">MELVIN DEBOT</h3>
     </div>
-    <div class="title display">
-      <h2 class="one">CREATIVE</h2>
-      <h2 class="two">DEVELOPER</h2>
+    <div class="title">
+      <h2 class="one" ref="textOne">CREATIVE</h2>
+      <h2 class="two" ref="textTwo">DEVELOPER</h2>
     </div>
     <div class="indicator_scroll flex">
       <span></span>
@@ -15,8 +15,38 @@
 </template>
 
 <script>
+import gsap, {Power3} from 'gsap'
 export default {
+  name: 'HEADER',
+  data : function(){
+    return {
 
+    }
+  },
+  methods : {
+    animationHeader(){
+      gsap.fromTo(this.$refs.textOne, 1,{ x : "30%", opacity : 0, ease : Power3.easeInOut}, { x : '0%', opacity : 1, ease : Power3.easeOut})
+      gsap.fromTo(this.$refs.textTwo, 1,{ x : "-30%", opacity : 0, ease : Power3.easeInOut}, { x : '0%', opacity : 1, ease : Power3.easeOut})
+      gsap.fromTo(this.$refs.nameUser, 1 ,
+        {
+          y : -10,
+          opacity : 0,
+          ease : Power3.easeIn,
+        },
+        {
+          y: 0,
+          opacity : 1,
+          ease : Power3.easeIn,
+        }
+      )
+    }
+  },
+  created(){
+    
+  },
+  mounted(){
+    this.animationHeader()
+  }
 }
 </script>
 
@@ -30,6 +60,9 @@ export default {
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
+  h3{
+    opacity: 1;
+  }
   .title{
     width: 100%;
     height: 80%;
@@ -45,10 +78,11 @@ export default {
     .one{
       position: absolute;
       top: 0;
+      // right: -200px;
       right: -200px;
       @media (max-width: 500px) {
         font-size: 16.5vw;
-        right: -100px;
+        right: -85px;
       }
     }
     .two{
