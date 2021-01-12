@@ -3,12 +3,21 @@
     "name" : "TCONNECT",
     "img" : "keecker",
     "link" : "/tconnect",
-    "class_position" : "right"
+    "class_position" : "left",
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO"
   },
   {
     "name" : "BOLK",
     "img" : "bolk",
     "link" : "/bolk",
-    "class_position" : "left"
+    "class_position" : "right",
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO"
+  },
+  {
+    "name" : "TCONNECT",
+    "img" : "keecker",
+    "link" : "/tconnect",
+    "class_position" : "left",
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO"
   }
 ]
