@@ -4,8 +4,8 @@
     <div class="cards flex">
       <div class="card flex">
         <h3>Standard</h3>
-        <h2>999e</h2>
-        <ul class="card--list display">
+        <h2>600e</h2>
+        <ul class="card--list">
           <li>+Site responsive</li>
           <li>+Charte graphique à partir d'une maquette pré-définie</li>
           <li>+Sélection d'une palette de couleur</li>
@@ -15,8 +15,8 @@
       </div>
       <div class="card flex">
         <h3>Standard</h3>
-        <h2>999e</h2>
-        <ul class="card--list display">
+        <h2>800e</h2>
+        <ul class="card--list">
           <li>+ Site responsive</li>
           <li>+ Site responsive</li>
           <li>+ Site responsive</li>
@@ -37,14 +37,14 @@ export default {
 <style lang="scss" scoped>
 .container--price{
   width: 100%;
-  height: 80vh;
+  height: auto;
   position: relative;
   overflow-x: hidden;
   .container--title{
     position: absolute;
     font-size: 10vw;
     right: -19%;
-    top: 50%;
+    top: 34%;
     font-weight: 900;
     transform: rotate(-90deg);
     opacity: 0.4;
@@ -62,7 +62,7 @@ export default {
       justify-content: space-around;
       width: 35%;
       height: 443px;
-      background: #E4E4E4;
+      background: #F4F4F4;
       @media (max-width: 500px) {
         width: 100%;
       }
