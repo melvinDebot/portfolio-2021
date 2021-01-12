@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "TCONNECT",
+    "img" : "keecker",
+    "link" : "/tconnect",
+    "class_position" : "right"
+  },
+  {
+    "name" : "BOLK",
+    "img" : "bolk",
+    "link" : "/bolk",
+    "class_position" : "left"
+  }
+]

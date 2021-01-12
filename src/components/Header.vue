@@ -65,11 +65,11 @@ export default {
   }
   .title{
     width: 100%;
-    height: 80%;
+    height: 50%;
     position: relative;
     padding: 20px 0px;
     @media (max-width: 500px) {
-      height: 30%;
+      height: 20%;
     }
     h2{
       font-size: 15vw;
@@ -105,7 +105,16 @@ export default {
       height: 1px;
       border: 1px solid #000000;
       transform: rotate(90deg);
+      animation: scrollAnimation 2s infinite cubic-bezier(0, 1, 1, 1);
     }
+  }
+}
+@keyframes scrollAnimation {
+  0% {
+    width: 78;
+  }
+  100%{
+    width: 0px;
   }
 }
 </style>
