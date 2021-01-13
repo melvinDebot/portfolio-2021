@@ -92,6 +92,14 @@ export default {
     overflow: hidden;
     position: relative;
     width: fit-content;
+    &:hover{
+      h2{
+        color: black;
+        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+      }
+    }
     h2{
     font-weight: 600;
       font-size: 8.6vw;
