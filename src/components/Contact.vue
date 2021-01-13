@@ -31,7 +31,7 @@
 </template>
 
 <script>
-import { gsap, Power2 } from "gsap";
+import { gsap, Power0 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default {
@@ -41,34 +41,35 @@ export default {
       gsap.timeline({
         scrollTrigger : {
           trigger: ".container--contact",
-          start: "top center",
+          start: "10% center",
           end: "35% center",
-          markers: true,
           scrub: true,
         }
       })
-      .fromTo([this.$refs.splitOne, this.$refs.splitTwo],3, 
+      .fromTo([this.$refs.splitOne, this.$refs.splitTwo],2, 
         {
-          y : 100,
+          y : 200,
           opacity: 0,
-          ease : Power2.easeOut
+          ease : Power0.easeInOut,
+          
         },
         {
           y : 0,
           opacity : 1,
-          ease : Power2.easeOut
+          ease : Power0.easeOut,
         }
       )
-      .fromTo([this.$refs.splitThree, this.$refs.splitFour, this.$refs.splitFive, this.$refs.splitSixt],3, 
+      .fromTo([this.$refs.splitThree, this.$refs.splitFour, this.$refs.splitFive, this.$refs.splitSixt],2, 
         {
           y : 100,
           opacity: 0,
-          ease : Power2.easeOut
+          ease : Power0.easeOut,
+          delay: 2
         },
         {
           y : 0,
           opacity : 1,
-          ease : Power2.easeOut
+          ease : Power0.easeOut
         }
       )
     }

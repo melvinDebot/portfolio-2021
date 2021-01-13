@@ -1,42 +1,50 @@
 [
   {
     "title" : "TCONNECT",
-    "img" : "keecker",
-    "text" : "L'entreprise française Keecker espère rapprocher l'ère des robots majordomes de la réalité. Leur robot, qui vient d'être mis en ligne sur Kickstarter (qui a déjà permis de récolter 78 000 dollars), est un substitut coûteux à la télévision, à la chaîne stéréo et à la baby-sitter. Il peut être connecté à votre téléphone et vous fournir des bulletins météo et même projeter un navigateur internet sur le mur de votre salon. C'est un produit assez soigné, sauf qu'il se vend au détail pour 4 000 dollars.",
+    "video" : "tconnect",
+    "text" : "The French company Keecker hopes to bring the era of robot butlers closer to reality. Their robot, which has just been put online on Kickstarter (which has already raised $78,000), is an expensive substitute for television, stereo and babysitter. It can be connected to your phone and provide you with weather reports and even project an Internet browser on your living room wall. It's a pretty neat product, except that it retails for $4,000.",
     "year" : 2020,
     "client" : "Tconnect",
     "color" : "#040484",
     "route" : "tconnect",
-    "text_mission" : "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque"
+    "button" : "Voir le site",
+    "display" : "private",
+    "text_mission" : "For robots to truly integrate into our homes, they must overcome a major problem that most robots face. This problem is accessibility."
   },
   {
     "title" : "BOLK",
-    "img" : "bolk",
-    "text" : "L'entreprise française Keecker espère rapprocher l'ère des robots majordomes de la réalité. Leur robot, qui vient d'être mis en ligne sur Kickstarter (qui a déjà permis de récolter 78 000 dollars), est un substitut coûteux à la télévision, à la chaîne stéréo et à la baby-sitter. Il peut être connecté à votre téléphone et vous fournir des bulletins météo et même projeter un navigateur internet sur le mur de votre salon. C'est un produit assez soigné, sauf qu'il se vend au détail pour 4 000 dollars.",
+    "video" : "bolk",
+    "text" : "Compose your own custom-made plate, or let yourself be guided by our seasonal recipes concocted. Discover your carbon impact on the planet, as well as the calories of your dish. From now on, you know everything! Bolk has designed this environmental nutriscore that you will find on each of our dishes. In the blink of an eye, you know more or less the impact of your dish.",
     "year" : 2020,
     "color" : "#20c997",
-    "client" : "Tconnect",
+    "client" : "Bolk",
     "route" : "bolk",
-    "text_mission" : "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque"
+    "button" : "Voir le site",
+    "display" : "private",
+    "text_mission" : "BOLK aims to reduce its carbon impact through action and transparency."
   },
   {
     "title" : "MADAME PEE",
-    "img" : "bolk",
-    "text" : "L'entreprise française Keecker espère rapprocher l'ère des robots majordomes de la réalité. Leur robot, qui vient d'être mis en ligne sur Kickstarter (qui a déjà permis de récolter 78 000 dollars), est un substitut coûteux à la télévision, à la chaîne stéréo et à la baby-sitter. Il peut être connecté à votre téléphone et vous fournir des bulletins météo et même projeter un navigateur internet sur le mur de votre salon. C'est un produit assez soigné, sauf qu'il se vend au détail pour 4 000 dollars.",
+    "video" : "tconnect",
+    "text" : "It will have taken only 30 minutes to create the desire to change a reality that is perceived as inevitable! 30 minutes is the average waiting time when you are a woman to access the washrooms of events that attract a large audience. And it is during this interminable delay, and while she wanted to participate in a concert, that Nathalie des Isnards had the idea of the Madame Pee female urinals.",
     "year" : 2020,
-    "color" : "#20c997",
-    "client" : "Tconnect",
+    "color" : "#FF9A9A",
+    "client" : "Madame pee",
     "route" : "madamepee",
-    "text_mission" : "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque"
+    "button" : "Voir le site",
+    "display" : "private",
+    "text_mission" : "Going to the bathroom outside the home when you are a woman can sometimes be a puzzle. We've created the first intimate and hygienic urinal for all women."
   },
   {
     "title" : "HISTOCOM",
-    "img" : "bolk",
-    "text" : "L'entreprise française Keecker espère rapprocher l'ère des robots majordomes de la réalité. Leur robot, qui vient d'être mis en ligne sur Kickstarter (qui a déjà permis de récolter 78 000 dollars), est un substitut coûteux à la télévision, à la chaîne stéréo et à la baby-sitter. Il peut être connecté à votre téléphone et vous fournir des bulletins météo et même projeter un navigateur internet sur le mur de votre salon. C'est un produit assez soigné, sauf qu'il se vend au détail pour 4 000 dollars.",
+    "video" : "tconnect",
+    "text" : "Histocom is a site for children that allows to learn the tools of communication through time, this interactive and dedicated platform for children between 8-13 years, for this the child will have to do a quiz after each chapter that has learned it.",
     "year" : 2020,
-    "color" : "#20c997",
-    "client" : "Tconnect",
+    "color" : "#AEBFD7",
+    "client" : "Hetic",
     "route" : "histocom",
-    "text_mission" : "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque"
+    "button" : "Voir le site",
+    "display" : "private",
+    "text_mission" : "To make in a playful way the objects of communication through time."
   }
 ]

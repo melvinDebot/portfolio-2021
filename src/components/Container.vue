@@ -36,12 +36,12 @@ export default {
           trigger: ".container--text",
           start: "top center",
           end: "bottom center",
-          markers: true,
+          makers : true,
           scrub: true,
         }
       })
       .to('.left', 1.5, {x: '100%', ease : Power1.easeInOut})
-      .to('.right', 1.5, {x: '-200%', delay : -1.5, ease : Power1.easeInOut})
+      .to('.right', 1.5, {x: '-90%', delay : -1.5, ease : Power1.easeInOut})
     },
     clicked(link){
       this.$router.push(link)
@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .container{
   width: 100%;
-  height: 110vh;
+  height: 90vh;
   padding: 50px 0px;
   overflow-x: hidden;
   .container--text{

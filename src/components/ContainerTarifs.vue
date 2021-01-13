@@ -4,36 +4,35 @@
     <div class="cards flex">
       <div class="card flex">
         <h3>Standard</h3>
-        <h2>600e</h2>
+        <h2>600€</h2>
         <ul class="card--list">
-          <li>+ Site responsive</li>
-          <li>+ Charte graphique à partir d'une maquette pré-définie</li>
-          <li>+ Sélection d'une palette de couleur</li>
-          <li>+ Site responsive</li>
+          <li>+ Responsive site</li>
+          <li>+ Graphic charter from a pre-defined model</li>
+          <li>+ Selection of a color palette </li>
         </ul>
-        <button>Demandez un devis</button>
+        <a href="mailto: melvin.debot@hetic.net" class="flex">Ask for an estimate</a>
       </div>
       <div class="card flex">
         <h3>Prémium</h3>
-        <h2>800e</h2>
+        <h2>800€</h2>
         <ul class="card--list">
-          <li>+ Site responsive</li>
-          <li>+ Création charte graphique personnalisée</li>
-          <li>+ Liens de partage sur les réseaux sociaux</li>
-          <li>+ Optimisation du référencement et des performances</li>
-          <li>+ Ajout de plusieurs fonctionnalités selon votre demande</li>
+          <li>+ Responsive site</li>
+          <li>+ Creation of personalized graphic charter</li>
+          <li>+ Sharing links on social networks</li>
+          <li>+ Optimization of referencing and performance</li>
+          <li>+ Addition of several functionalities according to your request</li>
         </ul>
-        <button>Demandez un devis</button>
+        <a href="mailto: melvin.debot@hetic.net" class="flex">Ask for an estimate</a>
       </div>
       <div class="card flex">
         <h3>Maintenance</h3>
-        <h2>50e<span>/HEURE</span></h2>
+        <h2>50€<span>/HOUR</span></h2>
         <ul class="card--list">
-          <li>+ Mises à jour site internet & plugins</li>
-          <li>+ Petites modifications graphiques ou de contenu</li>
-          <li>+ Optimisation performances</li>
+          <li>+ Website updates & plugins</li>
+          <li>+ Small graphic or content modifications</li>
+          <li>+ Performance optimization</li>
         </ul>
-        <button>Me contactez</button>
+        <a href="mailto: melvin.debot@hetic.net" class="flex">contact me</a>
       </div> 
     </div>
   </div>
@@ -52,7 +51,6 @@ export default {
           trigger: ".container--price",
           start: "top center",
           end: "30% center",
-          markers: true,
           scrub: true,
         }
       })
@@ -80,7 +78,7 @@ export default {
   position: relative;
   overflow-x: hidden;
   @media (max-width: 500px) {
-    height: 250vh;
+    height: 270vh;
     
   }
   .container--title{
@@ -103,16 +101,24 @@ export default {
     position: relative;
     @media (max-width: 500px) {
       flex-direction: column;
-      height: 243vh;
+      height: 266vh;
     }
     .card{
       flex-direction: column;
       justify-content: space-around;
       width: 29%;
-      height: 478px;
+      height: 504px;
       background: #F4F4F4;
       @media (max-width: 500px) {
+        height: 450px;
         width: 100%;
+      }
+      &:nth-child(2){
+        @media (max-width: 500px) {
+          .card--list{
+            height: 60%;
+          }
+        }
       }
       &:nth-child(3){
         background: #16BF15;
@@ -123,7 +129,7 @@ export default {
             font-weight: 300;
           }
         }
-        button{
+        a{
           background: white;
           color: #16BF15;
         }
@@ -151,9 +157,10 @@ export default {
           text-align: start;
         }
       }
-      button{
+      a{
         width: 223px;
         height: 53px;
+        text-decoration: none;
         background: #16BF15;
         color: white;
         border: none;

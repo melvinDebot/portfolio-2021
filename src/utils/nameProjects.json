@@ -4,7 +4,7 @@
     "img" : "keecker",
     "link" : "/tconnect",
     "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO KOTLIN JAVASCRIPT SCSS HTML FIGMA",
+    "subtitle" : "VUEJS TYPESCRIPTS KOTLIN JAVASCRIPT SCSS HTML FIGMA JAVA",
     "color" : "#040484"
   },
   {
@@ -20,7 +20,7 @@
     "img" : "keecker",
     "link" : "/madamepee",
     "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS NODEJS SHELL JAVASCRIPT SCSS HTML FIGMA",
+    "subtitle" : "VUEJS TYPESCRIPTS NODEJS LEAFTET JAVASCRIPT SCSS HTML ADOBE XD",
     "color" : "#040484"
   },
   {
@@ -28,15 +28,7 @@
     "img" : "bolk",
     "link" : "/histocom",
     "class_position" : "right",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA",
+    "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY",
     "color" : "#20c997"
-  },
-  {
-    "name" : "TCONNECT",
-    "img" : "keecker",
-    "link" : "/tconnect",
-    "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO KOTLIN JAVASCRIPT SCSS HTML FIGMA",
-    "color" : "#040484"
   }
 ]

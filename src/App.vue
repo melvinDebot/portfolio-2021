@@ -21,6 +21,9 @@
   justify-content: center;
   align-items: center;
 }
+.gsap-marker-scroller-end{
+  display: none;
+}
 .flex--col{
   flex-direction: column;
 }

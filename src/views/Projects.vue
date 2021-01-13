@@ -1,24 +1,64 @@
 <template>
   <div class="info-projects">
     <div class="wrapper flex" :style="{background : currentData.color}">
-      <div class="back">
-        <h3>Retour</h3>
-      </div>
+        <router-link to="/" class="back flex">
+          <img :src="arrow" alt="arrow"/>
+          <h3>Back to home</h3>
+        </router-link>
       <h2 ref="title">{{ currentData.title }}</h2>
       <div class="indicator_scroll flex">
       <span></span>
       scroll
     </div>
     </div>
-    <div class="wrapper"></div>
+    <div class="wrapper flex">
+      <div class="screen">
+        <div class="screen--buttons flex">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <video width="auto" height="auto" loop autoplay>
+          <source :src="getVideoPath(currentData.video)" type="video/mp4">
+        </video>
+      </div>
+      <div class="infos">
+        <p class="infos--text">{{ currentData.text }}</p>
+        <div class="infos--plus">
+          <h4>Année</h4>
+          <p>{{ currentData.year }}</p>
+        </div>
+        <div class="infos--plus">
+          <h4>Clients</h4>
+          <p>{{ currentData.client }}</p>
+        </div>
+        <div class="infos--plus">
+          <h4>Missions</h4>
+          <p>{{ currentData.text_mission }}</p>
+        </div>
+        <button class="info--button" v-if="buttonShow(currentData.display)">
+          Voir le site
+        </button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import infos from '@/utils/nameProjectsInfo.json'
 import gsap, {Power3} from 'gsap'
+import arrow from '@/assets/arrow.svg'
 export default {
   name : 'PROJECTS',
+  data : function(){
+    return {
+      arrow : arrow,
+      displayButton : false
+    }
+  },
+  created() {
+    this.getData()
+  },
   computed : {
     getData(){
       return infos
@@ -43,6 +83,20 @@ export default {
           ease : Power3.easeOut
         }
       )
+    },
+    getVideoPath(video){
+      return require(`@/assets/videos/${video}.mp4`)
+    },
+    clickedRoute(routeName){
+      window.scrollTo(0, 0)
+      this.$router.push(routeName)
+    },
+    buttonShow(show){
+      if(show === 'private'){
+        this.displayButton = false
+      } else{
+        this.displayButton = true
+      }
     }
   },
   mounted(){
@@ -59,10 +113,25 @@ export default {
   .wrapper{
     width: 100%;
     height: 100vh;
+    &:nth-child(2){
+      height: auto;
+      padding: 50px 0px;
+      justify-content: space-around;
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
+    }
     .back{
       position: absolute;
-      top: 0;
-      left: 0;
+      width: 195px;
+      justify-content: space-between;
+      top: 25px;
+      left: 25px;
+      color: white;
+      text-decoration: none;
+      img{
+        width: 50px;
+      }
     }
     h2{
       font-size: 8.6vw;
@@ -87,6 +156,83 @@ export default {
         animation: scrollAnimation 2s infinite cubic-bezier(0, 1, 1, 1);
       }
     }
+    .screen{
+      width:auto;
+      height: auto;
+      @media (max-width: 500px) {
+        width: 90%;
+      }
+      video{
+        max-width: 650px;
+        @media (max-width: 500px) {
+          width: 90%;
+        }
+      }
+      .screen--buttons{
+        width: 100%;
+        height: 25px;
+        background: #E1E4EB;
+        justify-content: flex-start;
+        padding-left: 10px;
+        div{
+          width: 10px;
+          margin-right: 4px;
+          height: 10px;
+          border-radius: 50%;
+          &:nth-child(1){
+            background: #FF796F;
+          }
+          &:nth-child(2){
+            background: #FFD171;
+          }
+          &:nth-child(3){
+            background: #64C255;
+          }
+        }
+      }
+    }
+    .infos{
+      width: 50%;
+      height: 70vh;
+      @media (max-width: 500px) {
+        margin-top: 30px;
+        width: 90%;
+        height: 94vh;
+      }
+      .infos--text{
+        margin-top: 30px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 142.5%;
+      }
+      .infos--plus{
+        margin-top: 30px;
+        h4{
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+        }
+        p{
+          margin-top: 8px;
+          font-weight: normal;
+          font-size: 18px;
+          line-height: 142.5%;
+        }
+      }
+      .info--button{
+        width: 150px;
+        height: 50px;
+        color: white;
+        background: black;
+        border: none;
+        margin-top:30px
+      }
+    }
+  }
+  .next--banner{
+    width: 100%;
+    height: 100px;
+    color: white;
   }
 }
 </style>
