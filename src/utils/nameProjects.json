@@ -4,31 +4,34 @@
     "img" : "keecker",
     "link" : "/tconnect",
     "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS KOTLIN JAVASCRIPT SCSS HTML FIGMA JAVA",
-    "color" : "#040484"
+    "subtitle" : "VUEJS TYPESCRIPTS KOTLIN JAVASCRIPT SCSS HTML FIGMA JAVA"
   },
   {
     "name" : "BOLK",
     "img" : "bolk",
     "link" : "/bolk",
     "class_position" : "right",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA",
-    "color" : "#20c997"
+    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA"
   },
   {
     "name" : "MADAME PEE",
     "img" : "keecker",
     "link" : "/madamepee",
     "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS NODEJS LEAFTET JAVASCRIPT SCSS HTML ADOBE XD",
-    "color" : "#040484"
+    "subtitle" : "VUEJS TYPESCRIPTS NODEJS LEAFTET JAVASCRIPT SCSS HTML ADOBE XD"
   },
   {
     "name" : "HISTOCOM",
     "img" : "bolk",
     "link" : "/histocom",
     "class_position" : "right",
-    "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY",
-    "color" : "#20c997"
+    "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
+  },
+  {
+    "name" : "RF JEFF",
+    "img" : "bolk",
+    "link" : "/rfjeff",
+    "class_position" : "left",
+    "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
   }
 ]

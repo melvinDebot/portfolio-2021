@@ -18,7 +18,7 @@
           <div></div>
           <div></div>
         </div>
-        <video width="auto" height="auto" loop autoplay>
+        <video width="auto" height="auto" autoplay>
           <source :src="getVideoPath(currentData.video)" type="video/mp4">
         </video>
       </div>
@@ -194,6 +194,7 @@ export default {
     .infos{
       width: 50%;
       height: 70vh;
+      padding: 0px 10px;
       @media (max-width: 500px) {
         margin-top: 30px;
         width: 90%;
