@@ -7,8 +7,8 @@
     "client" : "Tconnect",
     "color" : "#040484",
     "route" : "tconnect",
-    "button" : "Voir le site",
-    "display" : "private",
+    "link_name" : "",
+    "display" : false,
     "text_mission" : "For robots to truly integrate into our homes, they must overcome a major problem that most robots face. This problem is accessibility."
   },
   {
@@ -19,8 +19,8 @@
     "color" : "#20c997",
     "client" : "Bolk",
     "route" : "bolk",
-    "button" : "Voir le site",
-    "display" : "private",
+    "link_name" : "",
+    "display" : false,
     "text_mission" : "BOLK aims to reduce its carbon impact through action and transparency."
   },
   {
@@ -31,8 +31,8 @@
     "color" : "#FF9A9A",
     "client" : "Madame pee",
     "route" : "madamepee",
-    "button" : "Voir le site",
-    "display" : "private",
+    "link_name" : "",
+    "display" : false,
     "text_mission" : "Going to the bathroom outside the home when you are a woman can sometimes be a puzzle. We've created the first intimate and hygienic urinal for all women."
   },
   {
@@ -43,8 +43,8 @@
     "color" : "#AEBFD7",
     "client" : "Hetic",
     "route" : "histocom",
-    "button" : "Voir le site",
-    "display" : "private",
+    "link_name" : "https://histocom.netlify.app/#/",
+    "display" : true,
     "text_mission" : "To make in a playful way the objects of communication through time."
   },
   {
@@ -55,8 +55,8 @@
     "color" : "#009CB4",
     "client" : "Frangy Luzein",
     "route" : "rfjeff",
-    "button" : "Voir le site",
-    "display" : "private",
-    "text_mission" : "To make in a playful way the objects of communication through time."
+    "link_name" : "https://agitated-lichterman-e13413.netlify.app/#/",
+    "display" : true,
+    "text_mission" : "Putting artists, singers and rappers in the spotlight."
   }
 ]

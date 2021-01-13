@@ -36,7 +36,6 @@ export default {
           trigger: ".container--text",
           start: "top center",
           end: "120% center",
-          markers : true,
           scrub: true,
         }
       })

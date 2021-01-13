@@ -36,9 +36,9 @@
           <h4>Missions</h4>
           <p>{{ currentData.text_mission }}</p>
         </div>
-        <button class="info--button" v-if="buttonShow(currentData.display)">
+        <a class="info--button" v-if="currentData.display" href="#" :style="{background : currentData.color}">
           Voir le site
-        </button>
+        </a>
       </div>
     </div>
   </div>
@@ -218,15 +218,17 @@ export default {
           font-weight: normal;
           font-size: 18px;
           line-height: 142.5%;
+          margin-bottom: 8px;
         }
       }
       .info--button{
+        text-decoration: none;
         width: 150px;
         height: 50px;
         color: white;
-        background: black;
         border: none;
-        margin-top:30px
+        margin-top:30px;
+        font-size: 30px;
       }
     }
   }
