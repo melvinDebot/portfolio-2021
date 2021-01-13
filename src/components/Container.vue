@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .container{
   width: 100%;
-  height: 100vh;
+  height: 110vh;
   padding: 50px 0px;
   overflow-x: hidden;
   .container--text{
@@ -73,7 +73,7 @@ export default {
     position: absolute;
     font-size: 10vw;
     right: -20%;
-    top: 50%;
+    top: 44%;
     font-weight: 900;
     transform: rotate(-90deg);
     opacity: 0.4;

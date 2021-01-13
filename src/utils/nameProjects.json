@@ -24,9 +24,9 @@
     "color" : "#040484"
   },
   {
-    "name" : "BOLK",
+    "name" : "HISTOCOM",
     "img" : "bolk",
-    "link" : "/bolk",
+    "link" : "/histocom",
     "class_position" : "right",
     "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA",
     "color" : "#20c997"

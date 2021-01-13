@@ -14,7 +14,7 @@
         <button>Demandez un devis</button>
       </div>
       <div class="card flex">
-        <h3>Standard</h3>
+        <h3>Prémium</h3>
         <h2>800e</h2>
         <ul class="card--list">
           <li>+ Site responsive</li>
@@ -25,6 +25,16 @@
         </ul>
         <button>Demandez un devis</button>
       </div>
+      <div class="card flex">
+        <h3>Maintenance</h3>
+        <h2>50e<span>/HEURE</span></h2>
+        <ul class="card--list">
+          <li>+ Mises à jour site internet & plugins</li>
+          <li>+ Petites modifications graphiques ou de contenu</li>
+          <li>+ Optimisation performances</li>
+        </ul>
+        <button>Me contactez</button>
+      </div> 
     </div>
   </div>
 </template>
@@ -66,11 +76,12 @@ export default {
 <style lang="scss" scoped>
 .container--price{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   position: relative;
   overflow-x: hidden;
   @media (max-width: 500px) {
-    height: 160vh;
+    height: 250vh;
+    
   }
   .container--title{
     position: absolute;
@@ -82,28 +93,48 @@ export default {
     opacity: 0.4;
   }
   .cards{
-    width: 80%;
-    height: 662px;
+    width: 89%;
+    height: 78vh;
     justify-content: space-around;
     position: relative;
     @media (max-width: 500px) {
       flex-direction: column;
-      height: 150vh;
+      height: 243vh;
     }
     .card{
       flex-direction: column;
       justify-content: space-around;
-      width: 35%;
+      width: 29%;
       height: 478px;
       background: #F4F4F4;
       @media (max-width: 500px) {
         width: 100%;
+      }
+      &:nth-child(3){
+        background: #16BF15;
+        color: white;
+        h2{
+          span{
+            font-size: 15px;
+            font-weight: 300;
+          }
+        }
+        button{
+          background: white;
+          color: #16BF15;
+        }
       }
       h3{
         font-weight: 500;
         font-size: 2.5vw;
         @media (max-width: 500px) {
           font-size: 6.5vw;
+        }
+      }
+      h2{
+        font-size: 3.6vw;
+        @media (max-width: 500px) {
+          font-size: 12.5vw;
         }
       }
       .card--list{
@@ -122,6 +153,7 @@ export default {
         background: #16BF15;
         color: white;
         border: none;
+        font-size: 18px;
       }
     }
   }

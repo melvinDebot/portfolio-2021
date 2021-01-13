@@ -66,7 +66,7 @@ export default {
   }
   .title{
     width: 100%;
-    height: 60%;
+    height: 68%;
     position: relative;
     padding: 20px 0px;
     @media (max-width: 500px) {
