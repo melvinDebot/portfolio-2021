@@ -25,7 +25,7 @@
       <div class="infos">
         <p class="infos--text">{{ currentData.text }}</p>
         <div class="infos--plus">
-          <h4>Année</h4>
+          <h4>Years</h4>
           <p>{{ currentData.year }}</p>
         </div>
         <div class="infos--plus">
