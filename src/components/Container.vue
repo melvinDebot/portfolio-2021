@@ -35,13 +35,13 @@ export default {
         scrollTrigger : {
           trigger: ".container--text",
           start: "top center",
-          end: "bottom center",
-          makers : true,
+          end: "120% center",
+          markers : true,
           scrub: true,
         }
       })
-      .to('.left', 1.5, {x: '100%', ease : Power1.easeInOut})
-      .to('.right', 1.5, {x: '-90%', delay : -1.5, ease : Power1.easeInOut})
+      .to('.left', 5.5, {x: '100%', ease : Power1.easeInOut})
+      .to('.right', 5.5, {x: '-190%', delay : -5.5, ease : Power1.easeInOut})
     },
     clicked(link){
       this.$router.push(link)
@@ -57,7 +57,7 @@ export default {
 <style lang="scss" scoped>
 .container{
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   padding: 50px 0px;
   overflow-x: hidden;
   .container--text{
