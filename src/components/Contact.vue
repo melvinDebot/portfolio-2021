@@ -97,6 +97,10 @@ export default {
     font-weight: 900;
     transform: rotate(-90deg);
     opacity: 0.4;
+    @media (max-width: 500px) {
+      letter-spacing: 5px;
+      right: -29%
+    }
   }
   .container--text__contact{
     width: 90%;

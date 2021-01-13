@@ -101,21 +101,25 @@ export default {
     justify-content: space-around;
     width: 89px;
       height: 107px;
+      position: relative;
     span{
-      width: 78px;
+      width: 48px;
       height: 1px;
       border: 1px solid #000000;
       transform: rotate(90deg);
-      animation: scrollAnimation 2s infinite cubic-bezier(0, 1, 1, 1);
+      animation: scrollAnimation 2.5s infinite cubic-bezier(0, 1, 1, 1);
+      position: absolute;
     }
   }
 }
 @keyframes scrollAnimation {
   0% {
-    width: 78;
+    top: -28px;
+    opacity: 0;
   }
   100%{
-    width: 0px;
+    top: -4px;
+    opacity: 1;
   }
 }
 </style>

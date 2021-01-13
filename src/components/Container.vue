@@ -40,8 +40,8 @@ export default {
           scrub: true,
         }
       })
-      .to('.left', 1, {x: '100%', ease : Power1.easeInOut})
-      .to('.right', 1, {x: '-200%', delay : -1, ease : Power1.easeInOut})
+      .to('.left', 1.5, {x: '100%', ease : Power1.easeInOut})
+      .to('.right', 1.5, {x: '-200%', delay : -1.5, ease : Power1.easeInOut})
     },
     clicked(link){
       this.$router.push(link)
@@ -77,6 +77,10 @@ export default {
     font-weight: 900;
     transform: rotate(-90deg);
     opacity: 0.4;
+    @media (max-width: 500px) {
+      letter-spacing: 5px;
+      right: -23%
+    }
   }
   .right {
     float: right;
