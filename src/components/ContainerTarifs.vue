@@ -13,7 +13,7 @@
         <a href="mailto: melvin.debot@hetic.net" class="flex">Ask for an estimate</a>
       </div>
       <div class="card flex">
-        <h3>Prémium</h3>
+        <h3>Premium</h3>
         <h2>800€</h2>
         <ul class="card--list">
           <li>+ Responsive site</li>

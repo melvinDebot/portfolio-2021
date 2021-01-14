@@ -83,7 +83,7 @@ export default {
 <style lang="scss" scoped>
 .container--contact{
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   overflow-x: hidden;
   @media (max-width: 500px) {
