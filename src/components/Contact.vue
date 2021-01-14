@@ -23,7 +23,7 @@
           <h3 ref="splitFive"><a href="#">Dribble</a></h3>
         </div>
         <div>
-          <h3 ref="splitSixt"><a href="https://www.linkedin.com/in/melvin-debot-b22078173/" target="blank">LinkeInd</a></h3>
+          <h3 ref="splitSixt"><a href="https://www.linkedin.com/in/melvin-debot-b22078173/" target="blank">LinkedIn</a></h3>
         </div>
       </div>
     </div>
@@ -42,21 +42,23 @@ export default {
         scrollTrigger : {
           trigger: ".container--contact",
           start: "10% center",
-          end: "35% center",
+          end: "30% center",
           scrub: true,
         }
       })
-      .fromTo([this.$refs.splitOne, this.$refs.splitTwo],2, 
+      .fromTo([this.$refs.splitOne, this.$refs.splitTwo],6, 
         {
           y : 200,
           opacity: 0,
           ease : Power0.easeInOut,
+          delay : -2
           
         },
         {
           y : 0,
           opacity : 1,
           ease : Power0.easeOut,
+          delay : -2
         }
       )
       .fromTo([this.$refs.splitThree, this.$refs.splitFour, this.$refs.splitFive, this.$refs.splitSixt],2, 
@@ -83,7 +85,7 @@ export default {
 <style lang="scss" scoped>
 .container--contact{
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   position: relative;
   overflow-x: hidden;
   @media (max-width: 500px) {
