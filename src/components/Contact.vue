@@ -27,6 +27,7 @@
         </div>
       </div>
     </div>
+    <p class="copyright"> © 2021 melvindebot.com</p>
   </div>
 </template>
 
@@ -45,7 +46,7 @@ export default {
           end: "30% center",
           scrub: true,
         }
-      })
+      }).timeScale(0.1)
       .fromTo([this.$refs.splitOne, this.$refs.splitTwo],6, 
         {
           y : 200,
@@ -142,6 +143,11 @@ export default {
         }
       }
     }
+  }
+  .copyright{
+    position: absolute;
+    text-align: center;
+    bottom: 0;
   }
 }
 </style>

@@ -38,7 +38,7 @@ export default {
           end: "120% center",
           scrub: true,
         }
-      })
+      }).timeScale(0.5)
       .to('.left', 5.5, {x: '100%', ease : Power1.easeInOut})
       .to('.right', 5.5, {x: '-190%', delay : -5.5, ease : Power1.easeInOut})
     },
