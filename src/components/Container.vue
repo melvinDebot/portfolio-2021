@@ -38,7 +38,7 @@ export default {
           end: "120% center",
           scrub: true,
         }
-      }).timeScale(0.5)
+      }).timeScale(0.8)
       .to('.left', 5.5, {x: '100%', ease : Power1.easeInOut})
       .to('.right', 5.5, {x: '-190%', delay : -5.5, ease : Power1.easeInOut})
     },
@@ -91,6 +91,7 @@ export default {
     overflow: hidden;
     position: relative;
     width: fit-content;
+    transition: all 1s ease-out;
     &:hover{
       h2{
         color: black;
@@ -102,6 +103,7 @@ export default {
     h2{
     font-weight: 600;
       font-size: 8.6vw;
+      transition: all 1s ease-out;
       @media (max-width: 500px) {
         font-size: 12.6vw;
       }

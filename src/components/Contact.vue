@@ -72,7 +72,8 @@ export default {
         {
           y : 0,
           opacity : 1,
-          ease : Power0.easeOut
+          ease : Power0.easeOut,
+          delay: 2
         }
       )
     }
