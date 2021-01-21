@@ -1,16 +1,21 @@
 <template>
   <div class="container">
     <div class="container--text">
+
       <h2 class="container--title">WORKS</h2>
       <div 
-        class="text"
+        class="text--primary"
         v-for="(title, index) in projects"
         :key="index"
         :class="title.class_position"
         @click="clicked(title.link)"
       >
-        <h2>{{ title.name }}</h2>
-        <h5>{{ title.subtitle }}</h5>
+        <!-- <div class="block--img"></div> -->
+        <div class="text">
+          <h2>{{ title.name }}</h2>
+          <h5>{{ title.subtitle }}</h5>
+        </div>
+        
       </div>
     </div>
   </div>
@@ -38,13 +43,15 @@ export default {
           end: "120% center",
           scrub: true,
         }
-      }).timeScale(0.8)
+      }).timeScale(0.9)
       .to('.left', 5.5, {x: '100%', ease : Power1.easeInOut})
       .to('.right', 5.5, {x: '-190%', delay : -5.5, ease : Power1.easeInOut})
     },
     clicked(link){
       this.$router.push(link)
-      
+    },
+    currentImg(img){
+      return require(`@/assets/images/${img}.png`)
     }
   },
   mounted(){
@@ -54,6 +61,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.block--img{
+  position: absolute;
+  width: 416px;
+  height: 416px;
+  background: lightgreen;
+}
 .container{
   width: 100%;
   height: 100vh;
