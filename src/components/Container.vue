@@ -10,7 +10,7 @@
         :class="title.class_position"
         @click="clicked(title.link)"
       >
-        <!-- <div class="block--img"></div> -->
+        <div class="block--img" :style="{backgroundImage: 'url('+require('@/assets/images/'+title.img)+')'}"></div>
         <div class="text">
           <h2>{{ title.name }}</h2>
           <h5>{{ title.subtitle }}</h5>
@@ -25,7 +25,6 @@
 import projects from '@/utils/nameProjects.json'
 import gsap, {Power1} from 'gsap'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
 export default {
   name: 'Projects',
@@ -63,9 +62,10 @@ export default {
 <style lang="scss" scoped>
 .block--img{
   position: absolute;
-  width: 416px;
-  height: 416px;
+  width: 216px;
+  height: 216px;
   background: lightgreen;
+  display: none;
 }
 .container{
   width: 100%;
@@ -98,13 +98,39 @@ export default {
     float: right;
     align-self: flex-end;
   }
-  .text{
-    height: auto;
-    cursor: pointer;
-    overflow: hidden;
-    position: relative;
-    width: fit-content;
-    transition: all 1s ease-out;
+  .text--primary{
+    .text{
+      height: auto;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      width: fit-content;
+      transition: all 1s ease-out;
+      
+      h2{
+      font-weight: 600;
+        font-size: 8.6vw;
+        transition: all 1s ease-out;
+        @media (max-width: 500px) {
+          font-size: 12.6vw;
+        }
+      }
+      h5{
+        font-weight: 400;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 1.25vw;
+        animation: move 4s infinite normal 0s linear;
+        text-align: initial;
+        white-space: nowrap;
+        color: #16BF15;
+        @media (max-width: 500px) {
+          margin-top: 20px;
+          font-size: 2.5vw;
+        }
+      }
+    }
     &:hover{
       h2{
         color: black;
@@ -112,31 +138,12 @@ export default {
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
       }
-    }
-    h2{
-    font-weight: 600;
-      font-size: 8.6vw;
-      transition: all 1s ease-out;
-      @media (max-width: 500px) {
-        font-size: 12.6vw;
-      }
-    }
-    h5{
-      font-weight: 400;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      font-size: 1.25vw;
-      animation: move 4s infinite normal 0s linear;
-      text-align: initial;
-      white-space: nowrap;
-      color: #16BF15;
-      @media (max-width: 500px) {
-        margin-top: 20px;
-        font-size: 2.5vw;
+      .block--img{
+        display: block;
       }
     }
   }
+  
   .overlay{
       position: absolute;
       width: 0%;

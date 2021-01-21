@@ -1,35 +1,35 @@
 [
   {
     "name" : "TCONNECT",
-    "img" : "keecker",
+    "img" : "bolk.png",
     "link" : "/tconnect",
     "class_position" : "left",
     "subtitle" : "VUEJS TYPESCRIPTS KOTLIN JAVASCRIPT SCSS HTML FIGMA JAVA"
   },
   {
     "name" : "BOLK",
-    "img" : "bolk",
+    "img" : "bolk.png",
     "link" : "/bolk",
     "class_position" : "right",
     "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA"
   },
   {
     "name" : "MADAME PEE",
-    "img" : "keecker",
+    "img" : "keecker.png",
     "link" : "/madamepee",
     "class_position" : "left",
     "subtitle" : "VUEJS TYPESCRIPTS NODEJS LEAFTET JAVASCRIPT SCSS HTML ADOBE XD"
   },
   {
     "name" : "HISTOCOM",
-    "img" : "bolk",
+    "img" : "bolk.png",
     "link" : "/histocom",
     "class_position" : "right",
     "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
   },
   {
     "name" : "RF JEFF",
-    "img" : "bolk",
+    "img" : "bolk.png",
     "link" : "/rfjeff",
     "class_position" : "left",
     "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
