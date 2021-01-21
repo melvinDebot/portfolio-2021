@@ -1,6 +1,7 @@
 <template>
   <div class="info-projects">
-    <div class="wrapper flex" :style="{background : currentData.color}">
+    <div class="wrapper flex" >
+      <div class="overlay" :style="{background : currentData.color}" ref="overlay"></div>
         <router-link to="/" class="back flex">
           <img :src="arrow" alt="arrow"/>
           <h3>Back to home</h3>
@@ -71,16 +72,28 @@ export default {
   },
   methods : {
     animationWrapper(){
-      gsap.fromTo(this.$refs.title, 1, 
+      gsap.fromTo(this.$refs.overlay, 1, 
         {
-          y : 100,
-          opacity : 0,
-          ease : Power3.easeInOut
+          height : '0vh',
+          bottom: -100
         },
         {
-          y: 0,
+          height : '100vh',
+          bottom: 0
+        }
+      )
+      gsap.fromTo(this.$refs.title, 1, 
+        {
+          y : 0,
+          opacity : 0,
+          ease : Power3.easeInOut,
+          delay: 5
+        },
+        {
+          y: 50,
           opacity: 1,
-          ease : Power3.easeOut
+          ease : Power3.easeOut,
+          delay: 1
         }
       )
     },
@@ -113,6 +126,15 @@ export default {
   .wrapper{
     width: 100%;
     height: 100vh;
+    position: relative;
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: black;
+    }
     &:nth-child(2){
       height: auto;
       padding: 50px 0px;
