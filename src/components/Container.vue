@@ -9,6 +9,7 @@
         :key="index"
         :class="title.class_position"
         @click="clicked(title.link)"
+        @mousemove="animatedImg"
       >
         <div class="block--img" :style="{backgroundImage: 'url('+require('@/assets/images/'+title.img)+')'}"></div>
         <div class="text">
@@ -39,7 +40,7 @@ export default {
         scrollTrigger : {
           trigger: ".container--text",
           start: "top center",
-          end: "120% center",
+          end: "170% center",
           scrub: true,
         }
       }).timeScale(0.9)
@@ -51,6 +52,15 @@ export default {
     },
     currentImg(img){
       return require(`@/assets/images/${img}.png`)
+    },
+    animatedImg(){
+      let arrayImg = document.querySelectorAll('.block--img')
+      window.addEventListener('mousemove', e => {
+        let left = e.pageX - 190
+        arrayImg.forEach(img => {
+          img.style.left = left + 'px'
+        })
+      })
     }
   },
   mounted(){
@@ -62,14 +72,20 @@ export default {
 <style lang="scss" scoped>
 .block--img{
   position: absolute;
-  width: 216px;
-  height: 216px;
-  background: lightgreen;
+  left: 0px;
+  top: -20px;
+  width: 316px;
+  height: 316px;
   display: none;
+  transition: all 0.1s linear;
+  -webkit-transition: all 0.1s linear;
 }
 .container{
   width: 100%;
-  height: 100vh;
+  height: 150vh;
+  @media (max-width: 500px) {
+    height: 100vh;
+  }
   padding: 50px 0px;
   overflow-x: hidden;
   .container--text{
@@ -99,6 +115,7 @@ export default {
     align-self: flex-end;
   }
   .text--primary{
+    width: fit-content;
     .text{
       height: auto;
       cursor: pointer;
@@ -106,11 +123,13 @@ export default {
       position: relative;
       width: fit-content;
       transition: all 1s ease-out;
+      -webkit-transition: all 0.5s ease-in-out;
       
       h2{
       font-weight: 600;
         font-size: 8.6vw;
         transition: all 1s ease-out;
+        -webkit-transition: all 0.5s ease-in-out;
         @media (max-width: 500px) {
           font-size: 12.6vw;
         }
