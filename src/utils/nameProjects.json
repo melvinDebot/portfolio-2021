@@ -1,38 +1,38 @@
 [
   {
-    "name" : "TCONNECT",
-    "img" : "keecker.png",
-    "link" : "/tconnect",
-    "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS KOTLIN JAVASCRIPT SCSS HTML FIGMA JAVA"
+    "name": "PEUGEOT",
+    "img": "keecker.png",
+    "link": "/peugeot",
+    "class_position": "left",
+    "subtitle": " JAVASCRIPT CSS HTML FIGMA"
   },
-  
+
   {
-    "name" : "MADAME PEE",
-    "img" : "madamepee.png",
-    "link" : "/madamepee",
-    "class_position" : "right",
-    "subtitle" : "VUEJS TYPESCRIPTS NODEJS LEAFTET JAVASCRIPT SCSS HTML ADOBE XD"
-  },
-  {
-    "name" : "BOLK",
-    "img" : "bolk.png",
-    "link" : "/bolk",
-    "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA"
+    "name": "TOTO",
+    "img": "madamepee.png",
+    "link": "/toto",
+    "class_position": "right",
+    "subtitle": " JAVASCRIPT CSS HTML FIGMA"
   },
   {
-    "name" : "HISTOCOM",
-    "img" : "histocom.png",
-    "link" : "/histocom",
-    "class_position" : "right",
-    "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
+    "name": "CHATELET",
+    "img": "bolk.png",
+    "link": "/chatelet",
+    "class_position": "left",
+    "subtitle": "VUEJS TYPESCRIPTS ARDUINO HTML SCSS JAVASCRIPT FIGMA"
   },
   {
-    "name" : "RF JEFF",
-    "img" : "rfjeff.png",
-    "link" : "/rfjeff",
-    "class_position" : "left",
-    "subtitle" : "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
+    "name": "HISTOCOM",
+    "img": "histocom.png",
+    "link": "/histocom",
+    "class_position": "right",
+    "subtitle": "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
+  },
+  {
+    "name": "RF JEFF",
+    "img": "rfjeff.png",
+    "link": "/rfjeff",
+    "class_position": "left",
+    "subtitle": "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
   }
 ]

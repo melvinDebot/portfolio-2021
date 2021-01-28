@@ -15,44 +15,52 @@
 </template>
 
 <script>
-import gsap, {Power3} from 'gsap'
+import gsap, { Power3 } from "gsap";
 export default {
-  name: 'Header',
-  data : function(){
-    return {
-
-    }
+  name: "Header",
+  data: function () {
+    return {};
   },
-  methods : {
-    animationHeader(){
-      gsap.fromTo(this.$refs.textOne, 1,{ x : "30%", opacity : 0, ease : Power3.easeInOut}, { x : '0%', opacity : 1, ease : Power3.easeOut})
-      gsap.fromTo(this.$refs.textTwo, 1,{ x : "-30%", opacity : 0, ease : Power3.easeInOut}, { x : '0%', opacity : 1, ease : Power3.easeOut})
-      gsap.fromTo(this.$refs.nameUser, 1 ,
+  methods: {
+    animationHeader() {
+      gsap.fromTo(
+        this.$refs.textOne,
+        1,
+        { x: "30%", opacity: 0, ease: Power3.easeInOut },
+        { x: "0%", opacity: 1, ease: Power3.easeOut }
+      );
+      gsap.fromTo(
+        this.$refs.textTwo,
+        1,
+        { x: "-30%", opacity: 0, ease: Power3.easeInOut },
+        { x: "0%", opacity: 1, ease: Power3.easeOut }
+      );
+      gsap.fromTo(
+        this.$refs.nameUser,
+        1,
         {
-          y : -10,
-          opacity : 0,
-          ease : Power3.easeIn,
+          y: -10,
+          opacity: 0,
+          ease: Power3.easeIn,
         },
         {
           y: 0,
-          opacity : 1,
-          ease : Power3.easeIn,
+          opacity: 1,
+          ease: Power3.easeIn,
         }
-      )
-    }
+      );
+    },
   },
-  created(){
-    
+  created() {},
+  mounted() {
+    this.animationHeader();
   },
-  mounted(){
-    this.animationHeader()
-  }
-}
+};
 </script>
 
 <style lang="scss" scoped>
-@import url('/styles/header.scss');
-.header{
+@import url("/styles/header.scss");
+.header {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -61,10 +69,10 @@ export default {
   flex-direction: column;
   overflow-x: hidden;
   padding: 75px 0px;
-  h3{
+  h3 {
     opacity: 1;
   }
-  .title{
+  .title {
     width: 100%;
     height: 68%;
     position: relative;
@@ -72,11 +80,11 @@ export default {
     @media (max-width: 500px) {
       height: 30%;
     }
-    h2{
+    h2 {
       font-size: 15vw;
       font-weight: 900;
     }
-    .one{
+    .one {
       position: absolute;
       top: 0;
       // right: -200px;
@@ -86,7 +94,7 @@ export default {
         right: -85px;
       }
     }
-    .two{
+    .two {
       position: absolute;
       bottom: 0;
       left: -400px;
@@ -96,13 +104,13 @@ export default {
       }
     }
   }
-  .indicator_scroll{
+  .indicator_scroll {
     flex-direction: column;
     justify-content: space-around;
     width: 89px;
-      height: 107px;
-      position: relative;
-    span{
+    height: 107px;
+    position: relative;
+    span {
       width: 48px;
       height: 1px;
       border: 1px solid #000000;
@@ -117,7 +125,7 @@ export default {
     top: -28px;
     opacity: 0;
   }
-  100%{
+  100% {
     top: -4px;
     opacity: 1;
   }

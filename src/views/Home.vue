@@ -9,24 +9,24 @@
 
 <script>
 // @ is an alias to /src
-import Header from '@/components/Header.vue'
-import Container from '@/components/Container.vue'
-import ContainerTarifs from '@/components/ContainerTarifs.vue'
-import Contact from '@/components/Contact.vue'
+import Header from "@/components/Header.vue";
+import Container from "@/components/Container.vue";
+import ContainerTarifs from "@/components/ContainerTarifs.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     Header,
     Container,
     ContainerTarifs,
-    Contact
-  }
-}
+    Contact,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.home{
+.home {
   width: 100%;
   height: auto;
 }
