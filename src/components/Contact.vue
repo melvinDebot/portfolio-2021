@@ -154,7 +154,7 @@ export default {
             font-size: 14vw;
           }
           a {
-            color: black;
+            color: var(--black-color);
           }
         }
       }
@@ -166,7 +166,7 @@ export default {
           font-size: 12vw;
         }
         a {
-          color: black;
+          color: var(--black-color);
         }
       }
     }

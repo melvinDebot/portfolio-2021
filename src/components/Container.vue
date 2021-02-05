@@ -124,7 +124,7 @@ export default {
       -webkit-transition: all 2s ease-in-out;
 
       h2 {
-        font-weight: 600;
+        font-weight: 800;
         font-size: 8.6vw;
         transition: all 1s ease-out;
         -webkit-transition: all 0.5s ease-in-out;
@@ -151,9 +151,11 @@ export default {
     &:hover {
       h2 {
         color: black;
-        -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+        -webkit-text-fill-color: var(
+          --white-color
+        ); /* Will override color (regardless of order) */
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: var(--black-color);
       }
       .block--img {
         display: block;

@@ -116,7 +116,7 @@ export default {
       justify-content: space-around;
       width: 29%;
       height: 504px;
-      background: #f4f4f4;
+      background: var(--light-color);
       @media (max-width: 500px) {
         height: 450px;
         width: 100%;
@@ -129,8 +129,8 @@ export default {
         }
       }
       &:nth-child(3) {
-        background: #16bf15;
-        color: white;
+        background: var(--green-color);
+        color: var(--white-color);
         h2 {
           span {
             font-size: 15px;
@@ -139,7 +139,7 @@ export default {
         }
         a {
           background: white;
-          color: #16bf15;
+          color: var(--green-color);
         }
       }
       h3 {
@@ -153,6 +153,9 @@ export default {
         font-size: 3.6vw;
         @media (max-width: 500px) {
           font-size: 12.5vw;
+        }
+        span {
+          border: none;
         }
       }
       .card--list {
@@ -169,8 +172,8 @@ export default {
         width: 223px;
         height: 53px;
         text-decoration: none;
-        background: #16bf15;
-        color: white;
+        background: var(--green-color);
+        color: var(--white-color);
         border: none;
         font-size: 18px;
       }

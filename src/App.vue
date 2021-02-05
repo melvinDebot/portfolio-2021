@@ -16,6 +16,40 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+:root {
+  --white-color: #f4f4f4;
+  --light-color: #f4f4fc;
+  --black-color: #141414;
+  --green-color: #16bf15;
+}
+body {
+  background: var(--white-color);
+  color: var(--black-color);
+  transition: all 0.5s ease-in-out;
+}
+.dark-mode {
+  background: var(--black-color);
+  color: var(--white-color);
+  transition: all 0.5s ease-in-out;
+}
+.dark-mode,
+span {
+  border: 1px solid var(--white-color);
+}
+
+[data-theme="dark"] {
+  --white-color: black;
+  --black-color: white;
+  --green-color: #1c542c;
+  --light-color: #3f3f43;
+}
+[data-theme="light"] {
+  --white-color: white;
+  --black-color: black;
+  --green-color: #16bf15;
+  --light-color: #f4f4fc;
+}
+
 .flex {
   display: flex;
   justify-content: center;

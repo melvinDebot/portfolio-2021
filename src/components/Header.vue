@@ -1,5 +1,8 @@
 <template>
   <div class="header">
+    <button class="header--button flex" @click="toggleMode">
+      <img :src="currentImage()" alt="" />
+    </button>
     <div class="subtitle flex">
       <h3 ref="nameUser">MELVIN DEBOT</h3>
     </div>
@@ -16,10 +19,16 @@
 
 <script>
 import gsap, { Power3 } from "gsap";
+import moonIcon from "../assets/moon.svg";
+import moonDarkIcon from "../assets/moon--dark.svg";
 export default {
   name: "Header",
   data: function () {
-    return {};
+    return {
+      moonIcon: moonIcon,
+      moonDarkIcon: moonDarkIcon,
+      swicthMode: true,
+    };
   },
   methods: {
     animationHeader() {
@@ -50,9 +59,23 @@ export default {
         }
       );
     },
+    toggleMode() {
+      this.swicthMode = !this.swicthMode;
+      var element = document.body;
+      // element.classList.toggle("dark-mode");
+      if (this.swicthMode == true) {
+        element.setAttribute("data-theme", "dark");
+      } else if (this.swicthMode == false) {
+        element.setAttribute("data-theme", "light");
+      }
+    },
+    currentImage() {
+      return this.swicthMode ? moonDarkIcon : moonIcon;
+    },
   },
   created() {},
   mounted() {
+    this.toggleMode();
     this.animationHeader();
   },
 };
@@ -69,6 +92,19 @@ export default {
   flex-direction: column;
   overflow-x: hidden;
   padding: 75px 0px;
+  position: relative;
+  .header--button {
+    position: absolute;
+    top: 72px;
+    right: 298px;
+    background: none;
+    border: none;
+    outline: none;
+    @media (max-width: 500px) {
+      top: 72px;
+      right: 29px;
+    }
+  }
   h3 {
     opacity: 1;
   }
@@ -113,7 +149,7 @@ export default {
     span {
       width: 48px;
       height: 1px;
-      border: 1px solid #000000;
+      border: 1px solid var(--black-color);
       transform: rotate(90deg);
       animation: scrollAnimation 2.5s infinite cubic-bezier(0, 1, 1, 1);
       position: absolute;
