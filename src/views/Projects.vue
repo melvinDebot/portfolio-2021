@@ -44,7 +44,7 @@
         <a
           class="info--button"
           v-if="currentData.display"
-          href="#"
+          :href="currentData.link_name"
           :style="{ background: currentData.color }"
         >
           Voir le site
@@ -243,6 +243,7 @@ export default {
       }
       .infos--plus {
         margin-top: 30px;
+        margin-bottom: 10px;
         h4 {
           font-weight: bold;
           font-size: 18px;
@@ -264,13 +265,10 @@ export default {
         border: none;
         margin-top: 30px;
         font-size: 30px;
+        padding: 5px;
+        border-radius: 10px;
       }
     }
-  }
-  .next--banner {
-    width: 100%;
-    height: 100px;
-    color: white;
   }
 }
 </style>

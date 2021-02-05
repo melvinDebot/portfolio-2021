@@ -75,8 +75,6 @@ export default {
   width: 316px;
   height: 316px;
   display: none;
-  transition: all 0.1s linear;
-  -webkit-transition: all 0.1s linear;
 }
 .container {
   width: 100%;
@@ -120,8 +118,6 @@ export default {
       overflow: hidden;
       position: relative;
       width: fit-content;
-      transition: all 1s ease-out;
-      -webkit-transition: all 2s ease-in-out;
 
       h2 {
         font-weight: 800;

@@ -117,6 +117,8 @@ export default {
       width: 29%;
       height: 504px;
       background: var(--light-color);
+      border-radius: 10px;
+      padding: 10px 0px;
       @media (max-width: 500px) {
         height: 450px;
         width: 100%;
