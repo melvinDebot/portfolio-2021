@@ -34,5 +34,12 @@
     "link": "/rfjeff",
     "class_position": "left",
     "subtitle": "VUEJS TYPESCRIPTS HTML SCSS JAVASCRIPT FIGMA SYMPHONY"
+  },
+  {
+    "name": "QUOTES",
+    "img": "rfjeff.png",
+    "link": "/bible",
+    "class_position": "right",
+    "subtitle": "VUEJS HTML SCSS ESLINT JAVASCRIPT FIGMA FIREBASE PRETTIER"
   }
 ]

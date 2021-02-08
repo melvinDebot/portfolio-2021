@@ -31,7 +31,6 @@
         </div>
       </div>
       <div class="text">
-        <div></div>
         <div>
           <h3 ref="splitSixt">
             <a
@@ -41,7 +40,18 @@
             >
           </h3>
         </div>
+        <div>
+          <h3 ref="splitSixt">
+            <a
+              href="https://hashnode.com/@melvindbt"
+              target="blank"
+              >Hasnod</a
+            >
+          </h3>
+        </div>
       </div>
+      
+      
     </div>
     <p class="copyright">© 2021 melvindebot.com</p>
   </div>

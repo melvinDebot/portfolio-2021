@@ -58,5 +58,17 @@
     "link_name": "https://agitated-lichterman-e13413.netlify.app/#/",
     "display": true,
     "text_mission": "Putting artists, singers and rappers in the spotlight."
+  },
+  {
+    "title": "BIBLE QUOTES",
+    "video": "bible",
+    "text": "It is a Christian site that allows you to display biblical verses in a random way followed by an explanatory message. ",
+    "year": 2020,
+    "color": "#ffc61b",
+    "client": "Arsène Debot",
+    "route": "bible",
+    "link_name": "https://bible-quote.netlify.app/#/",
+    "display": true,
+    "text_mission": "give people the opportunity to read the Bible every day"
   }
 ]

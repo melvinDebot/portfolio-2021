@@ -45,6 +45,7 @@
           class="info--button"
           v-if="currentData.display"
           :href="currentData.link_name"
+          target="blank"
           :style="{ background: currentData.color }"
         >
           Voir le site
