@@ -41,5 +41,12 @@
     "link": "/bible",
     "class_position": "right",
     "subtitle": "VUEJS HTML SCSS ESLINT JAVASCRIPT FIGMA FIREBASE PRETTIER"
+  },
+  {
+    "name": "POKEMON",
+    "img": "rfjeff.png",
+    "link": "/pokemon",
+    "class_position": "left",
+    "subtitle": "VUEJS SCSS ESLINT JAVASCRIPT PWA FIGMA PRETTIER GSAP"
   }
 ]

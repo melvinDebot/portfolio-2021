@@ -48,6 +48,19 @@ export default {
     clicked(link) {
       this.$router.push(link);
     },
+    imgPos(e, image) {
+      let mousePosX = e.x;
+      let mousePosY = e.y;
+      image.style.left =
+        mousePosX - image.getBoundingClientRect().width * 0.5 + "px";
+      image.style.top =
+        mousePosY - image.getBoundingClientRect().height * 0.5 + "px";
+    },
+    mouseMoveText(e, img) {
+      this.imgPos(e, img);
+      console.log("okayyy");
+    },
+
     currentImg(img) {
       return require(`@/assets/images/${img}.png`);
     },
@@ -80,7 +93,7 @@ export default {
   width: 100%;
   height: 150vh;
   @media (max-width: 500px) {
-    height: 100vh;
+    height: 120vh;
   }
   padding: 50px 0px;
   overflow-x: hidden;

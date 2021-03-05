@@ -2,6 +2,7 @@
   <div class="home border--display">
     <Header />
     <Container />
+    <About />
     <ContainerTarifs />
     <Contact />
   </div>
@@ -13,6 +14,7 @@ import Header from "@/components/Header.vue";
 import Container from "@/components/Container.vue";
 import ContainerTarifs from "@/components/ContainerTarifs.vue";
 import Contact from "@/components/Contact.vue";
+import About from "@/components/About.vue";
 
 export default {
   name: "Home",
@@ -21,6 +23,7 @@ export default {
     Container,
     ContainerTarifs,
     Contact,
+    About,
   },
 };
 </script>

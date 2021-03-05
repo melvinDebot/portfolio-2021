@@ -2,7 +2,7 @@
   {
     "title": "PEUGEOT",
     "video": "peugeot",
-    "text": "Peugeot in a circle as much national as international, and the reputation of the brand that produces quality cycles is growing. Recently, the firm has become known for its wide range of electrically assisted bicycles, which are becoming increasingly popular with both city dwellers and sports enthusiasts.",
+    "text": "Peugeot in a circle as much national as international and the reputation of the brand that produces quality cycles is growing. Recently, the firm has become known for its wide range of electrically assisted bicycles, which are becoming increasingly popular with both city dwellers and sports enthusiasts.",
     "year": 2018,
     "client": "Hetic",
     "color": "#1A2844",
@@ -50,7 +50,7 @@
   {
     "title": "RF JEFF",
     "video": "rfjeff",
-    "text": "This is a site of two people passionate about video and photography who want to share their creations and their universe with you while trying to captivate the youth through visual art. Those who like it the most is to get out of our comfort zone even trying different styles so that their work is always something different.",
+    "text": "This is a site of two people passionate about videos and photography who want to share their creations and their universe with you while trying to captivate the youth through visual art. Those who like it the most is to get out of our comfort zone even trying different styles so that their work is always something different.",
     "year": 2019,
     "color": "#009CB4",
     "client": "Frangy Luzein",
@@ -70,5 +70,17 @@
     "link_name": "https://bible-quote.netlify.app/#/",
     "display": true,
     "text_mission": "give people the opportunity to read the Bible every day"
+  },
+  {
+    "title": "POKEMON",
+    "video": "pokemon",
+    "text": "it's a student project to create a progressive pokemon-themed web app it's like a blog that presents events on the game pokemon go.",
+    "year": 2020,
+    "color": "#a2db95",
+    "client": "Hetic",
+    "route": "pokemon",
+    "link_name": "https://pwa-pokemon-go.netlify.app/#/",
+    "display": true,
+    "text_mission": "Catch them all"
   }
 ]

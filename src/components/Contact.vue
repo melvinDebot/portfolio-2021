@@ -32,7 +32,7 @@
       </div>
       <div class="text">
         <div>
-          <h3 ref="splitSixt">
+          <h3 ref="splitFive">
             <a
               href="https://www.linkedin.com/in/melvin-debot-b22078173/"
               target="blank"
@@ -42,16 +42,10 @@
         </div>
         <div>
           <h3 ref="splitSixt">
-            <a
-              href="https://hashnode.com/@melvindbt"
-              target="blank"
-              >Hasnod</a
-            >
+            <a href="https://gitlab.com/melvin.debot" target="blank">Gitlab</a>
           </h3>
         </div>
       </div>
-      
-      
     </div>
     <p class="copyright">© 2021 melvindebot.com</p>
   </div>
@@ -126,6 +120,7 @@ export default {
   height: 120vh;
   position: relative;
   overflow-x: hidden;
+
   @media (max-width: 500px) {
     flex-direction: column;
     height: 120vh;

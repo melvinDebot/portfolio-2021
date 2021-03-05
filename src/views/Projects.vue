@@ -23,7 +23,7 @@
           <div></div>
           <div></div>
         </div>
-        <video width="auto" height="auto" autoplay>
+        <video width="auto" height="auto" controls>
           <source :src="getVideoPath(currentData.video)" type="video/mp4" />
         </video>
       </div>
@@ -151,7 +151,7 @@ export default {
     }
     &:nth-child(2) {
       height: auto;
-      padding: 50px 0px;
+      padding: 50px 8px;
       justify-content: space-around;
       @media (max-width: 500px) {
         flex-direction: column;
