@@ -22,8 +22,18 @@
         <div class="about--experience">
           <h3>REFERENCES</h3>
           <div class="reveal-text-about">
-            <h6>2020</h6>
-            <p>CSS WINNERS</p>
+            <div class="reveal-text-about">
+              <h6>2020</h6>
+              <p>CSS WINNERS</p>
+            </div>
+             <div class="reveal-text-about">
+              <h6>2020</h6>
+              <p>DESIGN NOMINEES</p>
+            </div>
+            <div class="reveal-text-about">
+              <h6>2020</h6>
+              <p>NICEONEILIKE</p>
+            </div>
           </div>
         </div>
         <div class="about--experience">
