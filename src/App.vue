@@ -26,6 +26,7 @@
 body {
   background: var(--white-color);
   color: var(--black-color);
+  scroll-behavior: smooth;
 }
 .dark-mode {
   background: var(--black-color);
