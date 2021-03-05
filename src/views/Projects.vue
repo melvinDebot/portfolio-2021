@@ -67,9 +67,6 @@ export default {
       displayButton: false,
     };
   },
-  created() {
-    this.getData();
-  },
   computed: {
     getData() {
       return infos;

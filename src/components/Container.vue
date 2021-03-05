@@ -39,6 +39,7 @@ export default {
             start: "top center",
             end: "170% center",
             scrub: true,
+            toggleActions: "restart none none reset",
           },
         })
         .timeScale(0.9)
@@ -48,30 +49,9 @@ export default {
     clicked(link) {
       this.$router.push(link);
     },
-    imgPos(e, image) {
-      let mousePosX = e.x;
-      let mousePosY = e.y;
-      image.style.left =
-        mousePosX - image.getBoundingClientRect().width * 0.5 + "px";
-      image.style.top =
-        mousePosY - image.getBoundingClientRect().height * 0.5 + "px";
-    },
-    mouseMoveText(e, img) {
-      this.imgPos(e, img);
-      console.log("okayyy");
-    },
 
     currentImg(img) {
       return require(`@/assets/images/${img}.png`);
-    },
-    animatedImg() {
-      let arrayImg = document.querySelectorAll(".block--img");
-      window.addEventListener("mousemove", (e) => {
-        let left = e.pageX - 190;
-        arrayImg.forEach((img) => {
-          img.style.left = left + "px";
-        });
-      });
     },
   },
   mounted() {
@@ -131,10 +111,12 @@ export default {
       overflow: hidden;
       position: relative;
       width: fit-content;
+      -ms-overflow-style: none !important;
+      scrollbar-width: none;
 
       h2 {
         font-weight: 800;
-        font-size: 8.6vw;
+        font-size: 8.3vw;
         transition: all 1s ease-out;
         -webkit-transition: all 0.5s ease-in-out;
         @media (max-width: 500px) {
@@ -190,5 +172,8 @@ export default {
   100% {
     left: 100%;
   }
+}
+.container::-webkit-scrollbar {
+  display: none;
 }
 </style>

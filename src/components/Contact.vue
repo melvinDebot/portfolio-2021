@@ -77,12 +77,14 @@ export default {
             opacity: 0,
             ease: Power0.easeInOut,
             delay: -2,
+            stagger: 1,
           },
           {
             y: 0,
             opacity: 1,
             ease: Power0.easeOut,
             delay: -2,
+            stagger: 1,
           }
         )
         .fromTo(
@@ -98,12 +100,14 @@ export default {
             opacity: 0,
             ease: Power0.easeOut,
             delay: 2,
+            stagger: 1,
           },
           {
             y: 0,
             opacity: 1,
             ease: Power0.easeOut,
             delay: 2,
+            stagger: 1,
           }
         );
     },

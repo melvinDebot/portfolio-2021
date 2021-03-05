@@ -3,7 +3,7 @@
     <div class="about--text">
       <h2 class="about--title">ABOUT</h2>
       <div class="about--p">
-        <p>
+        <p class="reveal-text-about">
           I am Melvin Debot a 21 year old French digital designer and creative
           developer. Currently a 3rd year student in a web school and an
           apprentice at Excenis for more than 1.5 years as a web engineer and
@@ -11,7 +11,7 @@
           various skills. I aspire to have new perspectives.
         </p>
         <br />
-        <p>
+        <p class="reveal-text-about">
           During my apprenticeship, I was able to collaborate with many brands
           such as bolk, madampee or even Tconnect on numerous and varied
           missions such as the creation of a salad vending machine or the
@@ -21,28 +21,28 @@
       <div class="about--others">
         <div class="about--experience">
           <h3>REFERENCES</h3>
-          <div>
+          <div class="reveal-text-about">
             <h6>2020</h6>
             <p>CSS WINNERS</p>
           </div>
         </div>
         <div class="about--experience">
           <h3>EXPERIENCES</h3>
-          <div>
+          <div class="reveal-text-about">
             <h6>2020 - now</h6>
-            <p>Ingénieur web at Exceenis</p>
+            <p>Web Engineer at Exceenis</p>
           </div>
-          <div>
+          <div class="reveal-text-about">
             <h6>2019 - 2020</h6>
-            <p>Freelance Developper Front End at Malt</p>
+            <p>Freelance Developer Front End at Malt</p>
           </div>
-          <div>
+          <div class="reveal-text-about">
             <h6>2018 - 2018</h6>
-            <p>Developer Word Press at Transacts</p>
+            <p>Word Press Developer at Transacts</p>
           </div>
-          <div>
+          <div class="reveal-text-about">
             <h6>2018 - 2018</h6>
-            <p>Chef de projet at Hetic</p>
+            <p>Project Manager at Hetic</p>
           </div>
         </div>
       </div>
@@ -51,14 +51,45 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import gsap, { Power0 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 export default {
   name: "About",
-  methods: {},
+  methods: {
+    revealAnimation() {
+      let allRevealText = document.querySelectorAll(".reveal-text-about");
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".about",
+            start: "10% center",
+            end: "55% center",
+            scrub: true,
+          },
+        })
+        .fromTo(
+          allRevealText,
+          0.5,
+          {
+            y: 10,
+            opacity: 0,
+            ease: Power0.easeInOut,
+            delay: -2,
+            stagger: 1,
+          },
+          {
+            y: 0,
+            opacity: 1,
+            ease: Power0.easeOut,
+
+            stagger: 1,
+          }
+        );
+    },
+  },
   mounted() {
-    this.scrollContainer();
+    this.revealAnimation();
   },
 };
 </script>
@@ -94,7 +125,10 @@ export default {
     }
     .about--p {
       width: 100%;
-      height: auto;
+      height: 250px;
+      @media (max-width: 500px) {
+        height: 750px;
+      }
       p {
         font-size: 1.3rem;
         letter-spacing: 0.01em;
@@ -105,7 +139,7 @@ export default {
       width: 100%;
       height: auto;
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       align-items: flex-start;
       @media (max-width: 500px) {
         flex-direction: column;
@@ -130,5 +164,8 @@ export default {
       }
     }
   }
+}
+.reveal-text-about-about {
+  position: relative;
 }
 </style>
