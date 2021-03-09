@@ -20,7 +20,7 @@
       </div>
       <div class="about--others">
         <div class="about--experience">
-          <h3>REFERENCES</h3>
+          <h3>AWARDS</h3>
           <div class="reveal-text-about">
             <div class="reveal-text-about">
               <h6>2020</h6>
@@ -28,7 +28,7 @@
             </div>
              <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>DESIGN NOMINEES</p>
+              <p>DESIGN NOMINEES - SITE OF THE DAY</p>
             </div>
             <div class="reveal-text-about">
               <h6>2020</h6>
