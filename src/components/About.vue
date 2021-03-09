@@ -30,10 +30,10 @@
               <h6>2020</h6>
               <p>DESIGN NOMINEES - SITE OF THE DAY</p>
             </div>
-            <div class="reveal-text-about">
+            <!-- <div class="reveal-text-about">
               <h6>2020</h6>
               <p>NICEONEILIKE</p>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="about--experience">
