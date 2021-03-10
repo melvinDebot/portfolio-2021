@@ -24,7 +24,7 @@
           <div class="reveal-text-about">
             <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>CSS WINNERS</p>
+              <p>CSS WINNERS - NOMINEE</p>
             </div>
             <div class="reveal-text-about">
               <h6>2020</h6>
