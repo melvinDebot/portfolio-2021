@@ -7,6 +7,7 @@
       <h3 ref="nameUser">MELVIN DEBOT</h3>
     </div>
     <div class="title">
+      <p class="title--text">AVAILABLE <br>FOR EXCITING <br>FREELANCE <br>PROJECTS</p>
       <h2 class="one" ref="textOne">CREATIVE</h2>
       <h2 class="two" ref="textTwo">DEVELOPER</h2>
     </div>
@@ -107,17 +108,29 @@ export default {
   }
   h3 {
     opacity: 1;
+    font-weight: 300;
+    text-align: center;
   }
   .title {
     width: 100%;
-    height: 68%;
+    height: 80%;
     position: relative;
     padding: 20px 0px;
+    .title--text{
+      position: absolute;
+      top: 0;
+      left: 8px;
+      font-size: 20px;
+      @media (max-width: 500px) {
+        font-size: 11px;
+        top: 0;
+      }
+    }
     @media (max-width: 500px) {
       height: 30%;
     }
     h2 {
-      font-size: 15vw;
+      font-size: 17vw;
       font-weight: 900;
     }
     .one {
@@ -126,7 +139,7 @@ export default {
       // right: -200px;
       right: -200px;
       @media (max-width: 500px) {
-        font-size: 16.5vw;
+        font-size: 18vw;
         right: -85px;
       }
     }
@@ -135,7 +148,7 @@ export default {
       bottom: 0;
       left: -400px;
       @media (max-width: 500px) {
-        font-size: 16.5vw;
+        font-size: 18vw;
         left: -100px;
       }
     }
