@@ -27,6 +27,7 @@ body {
   background: var(--white-color);
   color: var(--black-color);
   scroll-behavior: smooth;
+  cursor: url("./assets/cursor.png") 4 12, auto;
 }
 .dark-mode {
   background: var(--black-color);

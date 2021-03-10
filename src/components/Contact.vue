@@ -122,7 +122,7 @@ export default {
 <style lang="scss" scoped>
 .container--contact {
   width: 100%;
-  height: 77vh;
+  height: 79vh;
   position: relative;
   overflow-x: hidden;
 

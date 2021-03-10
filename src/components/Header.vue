@@ -89,7 +89,7 @@ export default {
       } else if (this.swicthMode == false) {
         element.setAttribute("data-theme", "light");
       }
-      this.$cookies.set("theme", this.swicthMode);
+
     },
     currentImage() {
       return this.swicthMode ? moonDarkIcon : moonIcon;
@@ -99,7 +99,6 @@ export default {
   mounted() {
     this.toggleMode();
     this.animationHeader();
-    this.swicthMode = this.$cookies.get("theme");
   },
 };
 </script>
