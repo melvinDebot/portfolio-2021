@@ -157,7 +157,7 @@ export default {
       }
     }
     .about--experience {
-      padding: 10px 0px;
+      padding: 15px 0px;
       width: 100%;
       height: auto;
       margin-top: 10px;
@@ -167,7 +167,7 @@ export default {
         font-size: 1.265rem;
       }
       div {
-        margin-top: 20px;
+        margin-top: 25px;
         p {
           margin-top: 3px;
           font-size: 1.3rem;

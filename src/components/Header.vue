@@ -89,7 +89,6 @@ export default {
       } else if (this.swicthMode == false) {
         element.setAttribute("data-theme", "light");
       }
-
     },
     currentImage() {
       return this.swicthMode ? moonDarkIcon : moonIcon;
