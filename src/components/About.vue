@@ -26,7 +26,7 @@
               <h6>2020</h6>
               <p>CSS WINNERS</p>
             </div>
-             <div class="reveal-text-about">
+            <div class="reveal-text-about">
               <h6>2020</h6>
               <p>DESIGN NOMINEES - SITE OF THE DAY</p>
             </div>
@@ -135,7 +135,8 @@ export default {
     }
     .about--p {
       width: 100%;
-      height: 250px;
+      height: auto;
+      padding: 10px 0px;
       @media (max-width: 500px) {
         height: 750px;
       }

@@ -7,7 +7,12 @@
       <h3 ref="nameUser">MELVIN DEBOT</h3>
     </div>
     <div class="title">
-      <p class="title--text">AVAILABLE <br>FOR EXCITING <br>FREELANCE <br>PROJECTS</p>
+      <div class="title--text">
+        <span class="reveal-span">AVAILABLE</span> <br />
+        <span class="reveal-span">FOR EXCITING</span><br />
+        <span class="reveal-span">FREELANCE</span> <br />
+        <span class="reveal-span">PROJECTS</span>
+      </div>
       <h2 class="one" ref="textOne">CREATIVE</h2>
       <h2 class="two" ref="textTwo">DEVELOPER</h2>
     </div>
@@ -33,6 +38,7 @@ export default {
   },
   methods: {
     animationHeader() {
+      let allSpanText = document.querySelectorAll(".reveal-span");
       gsap.fromTo(
         this.$refs.textOne,
         1,
@@ -59,16 +65,31 @@ export default {
           ease: Power3.easeIn,
         }
       );
+      gsap.fromTo(
+        allSpanText,
+        1,
+        {
+          y: -10,
+          opacity: 0,
+          ease: Power3.easeIn,
+        },
+        {
+          y: 0,
+          opacity: 1,
+          ease: Power3.easeIn,
+          stagger: 0.3,
+        }
+      );
     },
     toggleMode() {
       this.swicthMode = !this.swicthMode;
       var element = document.body;
-      // element.classList.toggle("dark-mode");
       if (this.swicthMode == true) {
         element.setAttribute("data-theme", "dark");
       } else if (this.swicthMode == false) {
         element.setAttribute("data-theme", "light");
       }
+      this.$cookies.set("theme", this.swicthMode);
     },
     currentImage() {
       return this.swicthMode ? moonDarkIcon : moonIcon;
@@ -78,6 +99,7 @@ export default {
   mounted() {
     this.toggleMode();
     this.animationHeader();
+    this.swicthMode = this.$cookies.get("theme");
   },
 };
 </script>
@@ -116,7 +138,9 @@ export default {
     height: 80%;
     position: relative;
     padding: 20px 0px;
-    .title--text{
+    .title--text {
+      height: auto;
+      padding: 5px 0px;
       position: absolute;
       top: 0;
       left: 8px;

@@ -71,11 +71,11 @@ export default {
 }
 .container {
   width: 100%;
-  height: 150vh;
+  height: 188vh;
   @media (max-width: 500px) {
     height: 120vh;
   }
-  padding: 50px 0px;
+  padding: 22px 0px;
   overflow-x: hidden;
   .container--text {
     width: 100%;
@@ -83,7 +83,7 @@ export default {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     position: relative;
   }
   .container--title {

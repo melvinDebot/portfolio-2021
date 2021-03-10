@@ -63,9 +63,10 @@ export default {
         .timeline({
           scrollTrigger: {
             trigger: ".container--contact",
-            start: "10% center",
-            end: "30% center",
+            start: "5% center",
+            end: "20% center",
             scrub: true,
+            // markers : true
           },
         })
         .timeScale(0.1)
@@ -121,7 +122,7 @@ export default {
 <style lang="scss" scoped>
 .container--contact {
   width: 100%;
-  height: 120vh;
+  height: 77vh;
   position: relative;
   overflow-x: hidden;
 
@@ -131,12 +132,18 @@ export default {
   }
   .container--title {
     position: absolute;
-    font-size: 10vw;
+    font-size: 21vw;
     right: -25%;
     top: 38%;
     font-weight: 900;
-    transform: rotate(-90deg);
+    transform: rotate(-0deg);
     opacity: 0.4;
+    color: black;
+    -webkit-text-fill-color: var(
+      --white-color
+    ); /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--black-color);
     @media (max-width: 500px) {
       letter-spacing: 5px;
       right: -29%;
