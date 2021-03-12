@@ -28,6 +28,10 @@
             </div>
             <div class="reveal-text-about">
               <h6>2020</h6>
+              <p>CSS LIGHT - NOMINEE</p>
+            </div>
+            <div class="reveal-text-about">
+              <h6>2020</h6>
               <p>DESIGN NOMINEES - SITE OF THE DAY</p>
             </div>
             <!-- <div class="reveal-text-about">

@@ -72,7 +72,7 @@ export default {
     window.addEventListener("scroll", () => {
       mainSection.forEach((v, i) => {
         let rect = v.getBoundingClientRect().y;
-        if (rect < window.innerHeight - 700) {
+        if (rect < window.innerHeight - 600) {
           console.log("window heigh :", window.innerHeight - 200);
           menuSection.forEach((v) => v.classList.remove("active"));
           menuSection[i].classList.add("active");
@@ -118,6 +118,7 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   align-content: flex-end;
+
   li {
     position: relative;
     a {
@@ -150,6 +151,7 @@ export default {
   font-size: 20px;
   span {
     color: var(--green-color) !important;
+    z-index: 100;
   }
 }
 </style>
