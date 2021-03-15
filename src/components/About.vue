@@ -24,20 +24,20 @@
           <div class="reveal-text-about">
             <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>CSS WINNERS - NOMINEE</p>
+              <p>CSS WINNERS - <strong>NOMINEE</strong></p>
             </div>
             <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>CSS LIGHT - NOMINEE</p>
+              <p>CSS LIGHT - <strong>FEATURED OF THE DAY</strong></p>
             </div>
             <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>DESIGN NOMINEES - SITE OF THE DAY</p>
+              <p>DESIGN NOMINEES - <strong>SITE OF THE DAY</strong></p>
             </div>
-            <!-- <div class="reveal-text-about">
+            <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>NICEONEILIKE</p>
-            </div> -->
+              <p>TOP CSS GALLERY - <strong>GALLERY</strong></p>
+            </div>
           </div>
         </div>
         <div class="about--experience">
@@ -180,7 +180,10 @@ export default {
     }
   }
 }
-.reveal-text-about-about {
+.reveal-text-about {
   position: relative;
+  strong {
+    color: var(--green-color);
+  }
 }
 </style>
