@@ -23,7 +23,7 @@
           <div></div>
           <div></div>
         </div>
-        <video width="auto" height="auto" controls>
+        <video width="auto" height="auto" controls autoplay>
           <source :src="getVideoPath(currentData.video)" type="video/mp4" />
         </video>
       </div>
