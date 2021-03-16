@@ -36,7 +36,7 @@
             </div>
             <div class="reveal-text-about">
               <h6>2020</h6>
-              <p>TOP CSS GALLERY - <strong>GALLERY</strong></p>
+              <p>CSS NECTAR - <strong>SITE OF THE DAY</strong></p>
             </div>
           </div>
         </div>
