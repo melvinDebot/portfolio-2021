@@ -23,19 +23,15 @@
           <h3>AWARDS</h3>
           <div class="reveal-text-about">
             <div class="reveal-text-about">
-              <h6>2020</h6>
               <p>CSS WINNERS - <strong>NOMINEE</strong></p>
             </div>
             <div class="reveal-text-about">
-              <h6>2020</h6>
               <p>CSS LIGHT - <strong>FEATURED OF THE DAY</strong></p>
             </div>
             <div class="reveal-text-about">
-              <h6>2020</h6>
               <p>DESIGN NOMINEES - <strong>SITE OF THE DAY</strong></p>
             </div>
             <div class="reveal-text-about">
-              <h6>2020</h6>
               <p>CSS NECTAR - <strong>SITE OF THE DAY</strong></p>
             </div>
           </div>
